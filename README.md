@@ -31,3 +31,5 @@ To identify high-risk students early
 To demonstrate practical application of ML in education
 
 To build an interactive prediction system
+
+The link of the app is:- https://studentresultprediction-dtcfsur8ccpgzu7eiziuaj.streamlit.app/
