@@ -1,8 +1,10 @@
 import streamlit as st
 import joblib
+import os
 
-# Load trained model
-model = joblib.load("student_model.pkl")
+# Load trained model safely
+model_path = os.path.join(os.getcwd(), "student_model.pkl")
+model = joblib.load(model_path)
 
 # Title
 st.title("Student Result Prediction System")
@@ -87,3 +89,4 @@ if st.button("Predict Result"):
             st.warning("Medium Risk Student")
         else:
             st.success("Low Risk Student")
+
